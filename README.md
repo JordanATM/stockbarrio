@@ -18,10 +18,3 @@ Importar el proyecto, framework **Vite**, y definir las variables `VITE_SUPABASE
 ## Pantallas
 
 Login · Resumen · Productos (lista, nuevo, editar) · Movimientos (Venta | Compra | Historial) · Historial (Ver / Editar) · Alertas e informes.
-
-## Decisiones tomadas por defecto (pendientes de aprobación del equipo)
-
-- Alerta con `stock <= mínimo`: se cambia en `ALERTA_INCLUYE_IGUALDAD` ([src/api.js](src/api.js)).
-- Los productos no se borran (columna `activo`).
-- Editar un movimiento permite cambiar cantidad, fecha y nota; el stock se recalcula con la diferencia y no puede quedar negativo.
-- Se retiró el tipo «Ajuste» de la interfaz y de la base de datos (ver observaciones en el chat).
